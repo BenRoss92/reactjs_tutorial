@@ -1,3 +1,3 @@
 # React.js Tutorial
 
-Before creating my own React.js project, I will be working through pre-prepared tutorial files to take my first baby steps in React.js.
+Before creating my own React.js project, I will take my first baby steps using React.js by working through an online tutorial.
