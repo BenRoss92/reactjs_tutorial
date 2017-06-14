@@ -10,7 +10,7 @@ module.exports = {
   devServer: {
     inline: true,
     contentBase: "./dist",
-    port: 3000
+    port: 8000
   },
   module: {
     loaders: [
@@ -21,6 +21,11 @@ module.exports = {
         query: {
           presets: ["latest", "stage-0", "react"]
         }
+      },
+      {
+        test: /\.json$/,
+        exclude: /(node_modules)/,
+        loader: "json-loader"
       }
     ]
   }
