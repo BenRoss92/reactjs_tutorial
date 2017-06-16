@@ -1,11 +1,10 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { hello, goodbye } from './lib'
+import { CodingDayCount } from './components/CodingDayCount'
+
+window.React = React
 
 render(
-	<div>
-		{hello}
-		{goodbye}
-	</div>,
+	<CodingDayCount />,
 	document.getElementById('react-container')
 )
