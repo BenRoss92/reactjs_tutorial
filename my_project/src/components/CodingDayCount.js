@@ -1,16 +1,17 @@
 import React from 'react'
+import '../stylesheets/ui.scss'
 
 export const CodingDayCount = React.createClass({
   render() {
     return (
-      <div class="coding-day-count">
-        <div class="total-days">
+      <div className="coding-day-count">
+        <div className="total-days">
           <span>5 days</span>
         </div>
-        <div class="coding-days">
+        <div className="coding-days">
           <span>2 days</span>
         </div>
-        <div class="non-coding-days">
+        <div className="non-coding-days">
           <span>1 non-coding day</span>
         </div>
       </div>
