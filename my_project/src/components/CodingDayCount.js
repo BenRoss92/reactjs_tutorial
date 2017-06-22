@@ -11,7 +11,7 @@ const calcGoalProgress = (total, goal) => {
   return percentToDecimal(total/goal)
 }
 
-export const CodingDayCount = ({total, coding, nonCoding, goal}) => (
+export const CodingDayCount = ({total=15, coding=10, nonCoding=5, goal=50}) => (
     <div className="coding-day-count">
       <div className="total-days">
         <span>{total}</span>
@@ -33,3 +33,14 @@ export const CodingDayCount = ({total, coding, nonCoding, goal}) => (
       </div>
     </div>
 )
+
+// Can also add default prop values in same way as using ES6 classes
+// - i.e. if 'CodingDayCount' was a class, would add them to the instance
+// of the class:
+//
+// CodingDayCount.defaultProps = {
+//   total: 15,
+//   coding: 10,
+//   nonCoding: 5,
+//   goal: 50
+// }
