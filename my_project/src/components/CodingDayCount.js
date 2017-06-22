@@ -36,21 +36,8 @@ export const CodingDayCount = ({total=15, coding=10, nonCoding=5, goal=50}) => (
 )
 
 CodingDayCount.propTypes = {
-  // E.g. 'total' prop value must be a number the value is required (if not given
-  //, will print warning to console):
-  total: PropTypes.number.isRequired,
+  total: PropTypes.number,
   coding: PropTypes.number,
   nonCoding: PropTypes.number,
   goal: PropTypes.number
 }
-
-// Can also add default prop values in same way as using ES6 classes
-// - i.e. if 'CodingDayCount' was a class, would add them to the instance
-// of the class:
-//
-// CodingDayCount.defaultProps = {
-//   total: 15,
-//   coding: 10,
-//   nonCoding: 5,
-//   goal: 50
-// }
