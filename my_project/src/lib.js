@@ -1,3 +1,6 @@
+// For example purposes only (Not currently being used)
+// - Example of importing JSON into 2 components:
+
 import React from 'react'
 import text from './titles.json'
 import './stylesheets/goodbye.scss'
