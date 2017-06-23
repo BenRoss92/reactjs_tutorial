@@ -1,10 +1,11 @@
-import { createClass } from 'react'
+import { Component } from 'react'
 import { CodingDayList } from './CodingDayList'
 import { CodingDayCount } from './CodingDayCount'
 
-export const App = createClass({
-  getInitialState() {
-    return {
+export class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
       allCodingDays: [
   			{
   				location: "Campus London",
@@ -26,12 +27,12 @@ export const App = createClass({
   			}
   		]
     }
-  },
+  }
   countDays(filter) {
     const { allCodingDays } = this.state
     return allCodingDays.filter(
       (day) => (filter) ? day[filter] : day ).length
-  },
+  }
   render() {
     return(
       <div className="app">
@@ -46,4 +47,4 @@ export const App = createClass({
       </div>
     )
   }
-})
+}
