@@ -28,13 +28,9 @@ export const App = createClass({
     }
   },
   countDays(filter) {
-    return this.state.allCodingDays.filter(function(day) {
-      if (filter) {
-        return day[filter]
-      } else {
-        return day
-      }
-    }).length
+    const { allCodingDays } = this.state
+    return allCodingDays.filter(
+      (day) => (filter) ? day[filter] : day ).length
   },
   render() {
     return(
